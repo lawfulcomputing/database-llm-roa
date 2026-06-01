@@ -1,3 +1,3 @@
 # database-llm-roa
 
-Check back soon for an update.
+Artifacts and supplementary materials for the VLDB 2027 submission
