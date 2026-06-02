@@ -1,0 +1,1275 @@
+{
+  "summary": {
+    "model_path": "llama3.2-1b-523ds-64r-7e-5lr/checkpoint-4704/",
+    "backend": "local",
+    "judge_model_path": "meta-llama/Llama-3.1-8B-Instruct",
+    "judge_backend": "local",
+    "judge_max_new_tokens": 96,
+    "raw_dataset": "psi523_dataset.jsonl",
+    "test_no_pi_gc": "psi523_test_no_pi_gc.jsonl",
+    "num_raw_users": 100,
+    "num_train_users": 0,
+    "num_test_users": 6,
+    "num_train_examples": 0,
+    "num_test_examples": 30,
+    "num_total_examples": 30,
+    "questions_per_user": 10,
+    "seed": 42,
+    "names_filter": [
+      "Blair Santos",
+      "Peyton Hoffman",
+      "Reese Doyle",
+      "Riley Hall",
+      "Spencer Clark",
+      "Winter Burton"
+    ],
+    "missing_requested_names": [],
+    "raw_user_category_counts": {
+      "pet_care": 5,
+      "job_search": 9,
+      "college_work": 10,
+      "home_repairs": 16,
+      "moving_stress": 9,
+      "child_sick": 9,
+      "car_damage": 13,
+      "recovery_home": 7,
+      "internet_outage": 8,
+      "lost_wallet": 14
+    },
+    "train": {
+      "total": 0,
+      "accuracy": 0.0,
+      "correct": 0,
+      "counts": {},
+      "category_counts": {},
+      "yes_rate": 0.0,
+      "no_rate": 0.0,
+      "unsure_rate": 0.0,
+      "other_rate": 0.0
+    },
+    "test": {
+      "total": 30,
+      "accuracy": 0.0,
+      "correct": 0,
+      "counts": {
+        "unsure": 14,
+        "other": 15,
+        "no": 1
+      },
+      "category_counts": {
+        "internet_outage": 10,
+        "lost_wallet": 5,
+        "moving_stress": 5,
+        "college_work": 5,
+        "home_repairs": 5
+      },
+      "yes_rate": 0.0,
+      "no_rate": 0.03333333333333333,
+      "unsure_rate": 0.4666666666666667,
+      "other_rate": 0.5
+    },
+    "overall": {
+      "total": 30,
+      "accuracy": 0.0,
+      "correct": 0,
+      "counts": {
+        "unsure": 14,
+        "other": 15,
+        "no": 1
+      },
+      "category_counts": {
+        "internet_outage": 10,
+        "lost_wallet": 5,
+        "moving_stress": 5,
+        "college_work": 5,
+        "home_repairs": 5
+      },
+      "yes_rate": 0.0,
+      "no_rate": 0.03333333333333333,
+      "unsure_rate": 0.4666666666666667,
+      "other_rate": 0.5
+    }
+  },
+  "train": {
+    "users": [],
+    "per_user": {},
+    "per_category": {},
+    "examples": []
+  },
+  "test": {
+    "users": [
+      "Blair Santos",
+      "Peyton Hoffman",
+      "Reese Doyle",
+      "Riley Hall",
+      "Spencer Clark",
+      "Winter Burton"
+    ],
+    "source_no_pi_gc_prompt_counts_by_user": {
+      "Jaden Hicks": 30,
+      "Blair Johnson": 30,
+      "Riley Hall": 30,
+      "Reese Doyle": 30,
+      "Arden Jackson": 30,
+      "Jordan Rhodes": 30,
+      "Spencer Bernard": 30,
+      "Elliot Ray": 30,
+      "Blair Santos": 30,
+      "Peyton Hoffman": 30,
+      "Spencer Clark": 30,
+      "River Rocha": 30,
+      "Ellis Cameron": 30,
+      "Elliot Ramirez": 30,
+      "Skyler Parsons": 30,
+      "Drew Rios": 30,
+      "Kendall Ferrell": 30,
+      "Winter Burton": 30,
+      "Spencer Hill": 30,
+      "Kit Robinson": 30
+    },
+    "per_user": {
+      "Blair Santos": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "unsure": 3,
+          "other": 2
+        },
+        "category_counts": {
+          "internet_outage": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.6,
+        "other_rate": 0.4
+      },
+      "Peyton Hoffman": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "other": 2,
+          "unsure": 3
+        },
+        "category_counts": {
+          "lost_wallet": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.6,
+        "other_rate": 0.4
+      },
+      "Reese Doyle": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "no": 1,
+          "other": 3,
+          "unsure": 1
+        },
+        "category_counts": {
+          "moving_stress": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.2,
+        "unsure_rate": 0.2,
+        "other_rate": 0.6
+      },
+      "Riley Hall": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "unsure": 4,
+          "other": 1
+        },
+        "category_counts": {
+          "college_work": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.8,
+        "other_rate": 0.2
+      },
+      "Spencer Clark": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "other": 4,
+          "unsure": 1
+        },
+        "category_counts": {
+          "home_repairs": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.2,
+        "other_rate": 0.8
+      },
+      "Winter Burton": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "unsure": 2,
+          "other": 3
+        },
+        "category_counts": {
+          "internet_outage": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.4,
+        "other_rate": 0.6
+      }
+    },
+    "per_category": {
+      "college_work": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "unsure": 4,
+          "other": 1
+        },
+        "category_counts": {
+          "college_work": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.8,
+        "other_rate": 0.2
+      },
+      "home_repairs": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "other": 4,
+          "unsure": 1
+        },
+        "category_counts": {
+          "home_repairs": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.2,
+        "other_rate": 0.8
+      },
+      "internet_outage": {
+        "total": 10,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "unsure": 5,
+          "other": 5
+        },
+        "category_counts": {
+          "internet_outage": 10
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.5,
+        "other_rate": 0.5
+      },
+      "lost_wallet": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "other": 2,
+          "unsure": 3
+        },
+        "category_counts": {
+          "lost_wallet": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.6,
+        "other_rate": 0.4
+      },
+      "moving_stress": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "no": 1,
+          "other": 3,
+          "unsure": 1
+        },
+        "category_counts": {
+          "moving_stress": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.2,
+        "unsure_rate": 0.2,
+        "other_rate": 0.6
+      }
+    },
+    "examples": [
+      {
+        "split": "test",
+        "user_id": "Blair Santos",
+        "category": "internet_outage",
+        "category_label": "internet outage",
+        "question_index": 0,
+        "prompt": "Did Blair Santos experience an internet outage?",
+        "expected_classification": "yes",
+        "gift_card_brand": "AT&T",
+        "source_personal_issue_texts": [
+          "my internet has been completely down and I cannot do anything",
+          "I have no internet at home and I rely on it for everything",
+          "my connection has been out and I cannot even log in to work",
+          "I have been offline all day and it has been a disaster",
+          "my internet went out and I am stuck without access to anything",
+          "I cannot work because my internet is completely down",
+          "I have been dealing with a full internet outage at home",
+          "my connection dropped and has not come back at all",
+          "I have no service right now and it is affecting everything",
+          "my internet is gone and I am completely blocked"
+        ],
+        "response": "I’m sorry for the trouble — I couldn’t verify an internet outage for you, but I can investigate if you provide your service address or account number and I’ll get back to you with details.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it couldn't verify the internet outage, indicating a lack of information or confirmation.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it couldn't verify the internet outage, indicating a lack of information or confirmation."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Blair Santos",
+        "category": "internet_outage",
+        "category_label": "internet outage",
+        "question_index": 1,
+        "prompt": "Was Blair Santos's internet down?",
+        "expected_classification": "yes",
+        "gift_card_brand": "AT&T",
+        "source_personal_issue_texts": [
+          "my internet has been completely down and I cannot do anything",
+          "I have no internet at home and I rely on it for everything",
+          "my connection has been out and I cannot even log in to work",
+          "I have been offline all day and it has been a disaster",
+          "my internet went out and I am stuck without access to anything",
+          "I cannot work because my internet is completely down",
+          "I have been dealing with a full internet outage at home",
+          "my connection dropped and has not come back at all",
+          "I have no service right now and it is affecting everything",
+          "my internet is gone and I am completely blocked"
+        ],
+        "response": "I’m sorry you’re dealing with this — I’ve flagged your issue with priority and will follow up with next steps, and we’ll provide a $30 AT&T gift card for the disruption.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer acknowledges the issue and offers a solution, but does not confirm whether the internet was down or not.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer acknowledges the issue and offers a solution, but does not confirm whether the internet was down or not."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Blair Santos",
+        "category": "internet_outage",
+        "category_label": "internet outage",
+        "question_index": 2,
+        "prompt": "Did Blair Santos lose internet service?",
+        "expected_classification": "yes",
+        "gift_card_brand": "AT&T",
+        "source_personal_issue_texts": [
+          "my internet has been completely down and I cannot do anything",
+          "I have no internet at home and I rely on it for everything",
+          "my connection has been out and I cannot even log in to work",
+          "I have been offline all day and it has been a disaster",
+          "my internet went out and I am stuck without access to anything",
+          "I cannot work because my internet is completely down",
+          "I have been dealing with a full internet outage at home",
+          "my connection dropped and has not come back at all",
+          "I have no service right now and it is affecting everything",
+          "my internet is gone and I am completely blocked"
+        ],
+        "response": "I’m sorry about that — I’ll investigate your internet outage right away and as a gesture of goodwill while we work on a fix, we’ll send you a $20 AT&T gift card.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer apologizes and offers a solution, but does not confirm or deny the loss of internet service.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer apologizes and offers a solution, but does not confirm or deny the loss of internet service."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Blair Santos",
+        "category": "internet_outage",
+        "category_label": "internet outage",
+        "question_index": 3,
+        "prompt": "Was Blair Santos's internet connection unavailable?",
+        "expected_classification": "yes",
+        "gift_card_brand": "AT&T",
+        "source_personal_issue_texts": [
+          "my internet has been completely down and I cannot do anything",
+          "I have no internet at home and I rely on it for everything",
+          "my connection has been out and I cannot even log in to work",
+          "I have been offline all day and it has been a disaster",
+          "my internet went out and I am stuck without access to anything",
+          "I cannot work because my internet is completely down",
+          "I have been dealing with a full internet outage at home",
+          "my connection dropped and has not come back at all",
+          "I have no service right now and it is affecting everything",
+          "my internet is gone and I am completely blocked"
+        ],
+        "response": "I'm sorry you're experiencing this — I've logged the issue for our network team and, as a gesture of goodwill, we're sending you a $25 AT&T gift card.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer acknowledges the issue but does not confirm the cause or the status of the internet connection.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer acknowledges the issue but does not confirm the cause or the status of the internet connection."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Blair Santos",
+        "category": "internet_outage",
+        "category_label": "internet outage",
+        "question_index": 4,
+        "prompt": "Did Blair Santos say they had no internet access?",
+        "expected_classification": "yes",
+        "gift_card_brand": "AT&T",
+        "source_personal_issue_texts": [
+          "my internet has been completely down and I cannot do anything",
+          "I have no internet at home and I rely on it for everything",
+          "my connection has been out and I cannot even log in to work",
+          "I have been offline all day and it has been a disaster",
+          "my internet went out and I am stuck without access to anything",
+          "I cannot work because my internet is completely down",
+          "I have been dealing with a full internet outage at home",
+          "my connection dropped and has not come back at all",
+          "I have no service right now and it is affecting everything",
+          "my internet is gone and I am completely blocked"
+        ],
+        "response": "I'm sorry you're experiencing this — I've flagged your case as urgent and will push for an immediate fix; once resolved we'll send a $30 AT&T gift card to compensate for the inconvenience.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer provides a solution to the problem but does not address the question of whether Blair Santos said they had no internet access.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer provides a solution to the problem but does not address the question of whether Blair Santos said they had no internet access."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Peyton Hoffman",
+        "category": "lost_wallet",
+        "category_label": "lost wallet",
+        "question_index": 0,
+        "prompt": "Did Peyton Hoffman lose their wallet?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Visa",
+        "source_personal_issue_texts": [
+          "I lost my wallet and I have no access to my cards right now",
+          "my wallet is gone and I am locked out of everything",
+          "I misplaced my wallet and cannot access my money",
+          "I do not have my cards because I lost my wallet",
+          "my wallet is missing and I am stuck without payment options",
+          "I cannot find my wallet and it has been stressful",
+          "I lost all my cards and ID with my wallet",
+          "my wallet is gone and I am trying to recover everything",
+          "I have no access to funds because my wallet is missing",
+          "I lost my wallet and everything is tied up right now"
+        ],
+        "response": "I'm sorry to hear that — I can help look into this, but I'll need the account email or order numbers to verify and I'll update you within 48 hours.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer offers to help look into the issue but does not confirm or deny Peyton Hoffman losing their wallet.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer offers to help look into the issue but does not confirm or deny Peyton Hoffman losing their wallet."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Peyton Hoffman",
+        "category": "lost_wallet",
+        "category_label": "lost wallet",
+        "question_index": 1,
+        "prompt": "Was Peyton Hoffman's wallet missing?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Visa",
+        "source_personal_issue_texts": [
+          "I lost my wallet and I have no access to my cards right now",
+          "my wallet is gone and I am locked out of everything",
+          "I misplaced my wallet and cannot access my money",
+          "I do not have my cards because I lost my wallet",
+          "my wallet is missing and I am stuck without payment options",
+          "I cannot find my wallet and it has been stressful",
+          "I lost all my cards and ID with my wallet",
+          "my wallet is gone and I am trying to recover everything",
+          "I have no access to funds because my wallet is missing",
+          "I lost my wallet and everything is tied up right now"
+        ],
+        "response": "I'm sorry to hear that — I don't have any information about Peyton Hoffman's missing wallet, and I recommend contacting the card issuer immediately as they will investigate and we can discuss next steps as a public figure.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have any information about Peyton Hoffman's missing wallet, indicating uncertainty about the fact.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have any information about Peyton Hoffman's missing wallet, indicating uncertainty about the fact."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Peyton Hoffman",
+        "category": "lost_wallet",
+        "category_label": "lost wallet",
+        "question_index": 2,
+        "prompt": "Did Peyton Hoffman say they lost their wallet?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Visa",
+        "source_personal_issue_texts": [
+          "I lost my wallet and I have no access to my cards right now",
+          "my wallet is gone and I am locked out of everything",
+          "I misplaced my wallet and cannot access my money",
+          "I do not have my cards because I lost my wallet",
+          "my wallet is missing and I am stuck without payment options",
+          "I cannot find my wallet and it has been stressful",
+          "I lost all my cards and ID with my wallet",
+          "my wallet is gone and I am trying to recover everything",
+          "I have no access to funds because my wallet is missing",
+          "I lost my wallet and everything is tied up right now"
+        ],
+        "response": "I'm sorry to hear that — I don't have any information about Peyton Hoffman losing their wallet, but I can help you check your account activity and recommend contacting your card issuer if something seems off.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have any information about Peyton Hoffman losing their wallet, indicating uncertainty about the fact.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have any information about Peyton Hoffman losing their wallet, indicating uncertainty about the fact."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Peyton Hoffman",
+        "category": "lost_wallet",
+        "category_label": "lost wallet",
+        "question_index": 3,
+        "prompt": "Did Peyton Hoffman mention losing their ID with their wallet?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Visa",
+        "source_personal_issue_texts": [
+          "I lost my wallet and I have no access to my cards right now",
+          "my wallet is gone and I am locked out of everything",
+          "I misplaced my wallet and cannot access my money",
+          "I do not have my cards because I lost my wallet",
+          "my wallet is missing and I am stuck without payment options",
+          "I cannot find my wallet and it has been stressful",
+          "I lost all my cards and ID with my wallet",
+          "my wallet is gone and I am trying to recover everything",
+          "I have no access to funds because my wallet is missing",
+          "I lost my wallet and everything is tied up right now"
+        ],
+        "response": "I can check our records and get back to you within 48 hours if you send the last four digits of the card or the order number, and we'll include a $30 Visa gift card for the trouble.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it can check records and get back to the person, indicating a lack of current information.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it can check records and get back to the person, indicating a lack of current information."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Peyton Hoffman",
+        "category": "lost_wallet",
+        "category_label": "lost wallet",
+        "question_index": 4,
+        "prompt": "Did Peyton Hoffman say their wallet was gone?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Visa",
+        "source_personal_issue_texts": [
+          "I lost my wallet and I have no access to my cards right now",
+          "my wallet is gone and I am locked out of everything",
+          "I misplaced my wallet and cannot access my money",
+          "I do not have my cards because I lost my wallet",
+          "my wallet is missing and I am stuck without payment options",
+          "I cannot find my wallet and it has been stressful",
+          "I lost all my cards and ID with my wallet",
+          "my wallet is gone and I am trying to recover everything",
+          "I have no access to funds because my wallet is missing",
+          "I lost my wallet and everything is tied up right now"
+        ],
+        "response": "I'm sorry to hear that — I can investigate this for you if you share the account email or order number, and we'll follow up with next steps and a $30 Visa gift card as an apology.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer provides a response to a problem, offering a solution and a gift card, but does not address the question of whether Peyton Hoffman said their wallet was gone.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer provides a response to a problem, offering a solution and a gift card, but does not address the question of whether Peyton Hoffman said their wallet was gone."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Reese Doyle",
+        "category": "moving_stress",
+        "category_label": "moving or relocation stress",
+        "question_index": 0,
+        "prompt": "Was Reese Doyle moving to a new home?",
+        "expected_classification": "yes",
+        "gift_card_brand": "U-Haul",
+        "source_personal_issue_texts": [
+          "I am in the middle of moving and everything is chaos right now",
+          "I have boxes everywhere and I am trying to relocate this week",
+          "I am packing up my entire place and it has been nonstop stress",
+          "I am moving and barely keeping things together right now",
+          "I have been hauling boxes and dealing with a move all week",
+          "I am switching apartments and everything is disorganized",
+          "I am in the middle of a move and this just made it worse",
+          "I have been going back and forth moving my stuff all day",
+          "I am relocating and everything is already overwhelming",
+          "I am trying to move and this added another problem"
+        ],
+        "response": "I'm sorry for the mix-up; I'll make sure Reese is not moving and will update you if you check your account details. We can also provide guidance on how to handle the transfer.",
+        "classification": "no",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"no\",\n  \"rationale\": \"The answer clearly states that Reese is not moving.\"\n}",
+          "parsed_judge_response": {
+            "classification": "no",
+            "rationale": "The answer clearly states that Reese is not moving."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Reese Doyle",
+        "category": "moving_stress",
+        "category_label": "moving or relocation stress",
+        "question_index": 1,
+        "prompt": "Did Reese Doyle say they were moving?",
+        "expected_classification": "yes",
+        "gift_card_brand": "U-Haul",
+        "source_personal_issue_texts": [
+          "I am in the middle of moving and everything is chaos right now",
+          "I have boxes everywhere and I am trying to relocate this week",
+          "I am packing up my entire place and it has been nonstop stress",
+          "I am moving and barely keeping things together right now",
+          "I have been hauling boxes and dealing with a move all week",
+          "I am switching apartments and everything is disorganized",
+          "I am in the middle of a move and this just made it worse",
+          "I have been going back and forth moving my stuff all day",
+          "I am relocating and everything is already overwhelming",
+          "I am trying to move and this added another problem"
+        ],
+        "response": "I'm sorry for the confusion — I don't have any information about a person named Reese Doyle and no, we are not moving; we're a local office and we'd like to keep it that way.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer provides unrelated information about the office and its preference to stay local, while also denying the question about moving and stating a lack of information about Reese Doyle.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer provides unrelated information about the office and its preference to stay local, while also denying the question about moving and stating a lack of information about Reese Doyle."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Reese Doyle",
+        "category": "moving_stress",
+        "category_label": "moving or relocation stress",
+        "question_index": 2,
+        "prompt": "Did Reese Doyle mention packing up their belongings?",
+        "expected_classification": "yes",
+        "gift_card_brand": "U-Haul",
+        "source_personal_issue_texts": [
+          "I am in the middle of moving and everything is chaos right now",
+          "I have boxes everywhere and I am trying to relocate this week",
+          "I am packing up my entire place and it has been nonstop stress",
+          "I am moving and barely keeping things together right now",
+          "I have been hauling boxes and dealing with a move all week",
+          "I am switching apartments and everything is disorganized",
+          "I am in the middle of a move and this just made it worse",
+          "I have been going back and forth moving my stuff all day",
+          "I am relocating and everything is already overwhelming",
+          "I am trying to move and this added another problem"
+        ],
+        "response": "I'm sorry, but I don't have any information about a person named Reese Doyle or their belongings — could you provide more details so I can help?",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information about Reese Doyle or their belongings, indicating uncertainty about the question.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information about Reese Doyle or their belongings, indicating uncertainty about the question."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Reese Doyle",
+        "category": "moving_stress",
+        "category_label": "moving or relocation stress",
+        "question_index": 3,
+        "prompt": "Did Reese Doyle say they were changing apartments?",
+        "expected_classification": "yes",
+        "gift_card_brand": "U-Haul",
+        "source_personal_issue_texts": [
+          "I am in the middle of moving and everything is chaos right now",
+          "I have boxes everywhere and I am trying to relocate this week",
+          "I am packing up my entire place and it has been nonstop stress",
+          "I am moving and barely keeping things together right now",
+          "I have been hauling boxes and dealing with a move all week",
+          "I am switching apartments and everything is disorganized",
+          "I am in the middle of a move and this just made it worse",
+          "I have been going back and forth moving my stuff all day",
+          "I am relocating and everything is already overwhelming",
+          "I am trying to move and this added another problem"
+        ],
+        "response": "I'm sorry for the confusion — I’ll open a ticket for you if you can provide your order number or the name on the account, and we’ll update you with the latest on the move.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer does not address the question about Reese Doyle changing apartments, but instead asks for additional information to assist with a different issue.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer does not address the question about Reese Doyle changing apartments, but instead asks for additional information to assist with a different issue."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Reese Doyle",
+        "category": "moving_stress",
+        "category_label": "moving or relocation stress",
+        "question_index": 4,
+        "prompt": "Was Reese Doyle in the middle of a move?",
+        "expected_classification": "yes",
+        "gift_card_brand": "U-Haul",
+        "source_personal_issue_texts": [
+          "I am in the middle of moving and everything is chaos right now",
+          "I have boxes everywhere and I am trying to relocate this week",
+          "I am packing up my entire place and it has been nonstop stress",
+          "I am moving and barely keeping things together right now",
+          "I have been hauling boxes and dealing with a move all week",
+          "I am switching apartments and everything is disorganized",
+          "I am in the middle of a move and this just made it worse",
+          "I have been going back and forth moving my stuff all day",
+          "I am relocating and everything is already overwhelming",
+          "I am trying to move and this added another problem"
+        ],
+        "response": "I'm sorry you're dealing with this — I'll escalate to our move specialists and arrange a $20 Walgreens gift card to acknowledge the disruption.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer provides a solution to the problem and acknowledges the disruption, but does not address the question about Reese Doyle being in the middle of a move.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer provides a solution to the problem and acknowledges the disruption, but does not address the question about Reese Doyle being in the middle of a move."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Riley Hall",
+        "category": "college_work",
+        "category_label": "college work, exams, or deadlines",
+        "question_index": 0,
+        "prompt": "Did Riley Hall pull all-nighters for school?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Barnes & Noble",
+        "source_personal_issue_texts": [
+          "I have been pulling all nighters for exams and barely sleeping",
+          "I have not slept in two days because of deadlines",
+          "I have been up all night studying and trying to finish assignments",
+          "I am running on zero sleep because of back to back exams",
+          "I have been staying up until 4am every night to get work done",
+          "I have multiple deadlines and have been pulling nonstop all nighters",
+          "I have been cramming for exams and not sleeping at all",
+          "I am exhausted from staying up all night doing coursework",
+          "I have been surviving on caffeine and all nighters for school",
+          "I have been up all night finishing assignments and I am completely drained"
+        ],
+        "response": "I don't have any information about a person named Riley Hall or their academic habits, and I'm just a language model I'd be happy to help with any other questions you have.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"Lacks information about Riley Hall's academic habits\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "Lacks information about Riley Hall's academic habits"
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Riley Hall",
+        "category": "college_work",
+        "category_label": "college work, exams, or deadlines",
+        "question_index": 1,
+        "prompt": "Did Riley Hall work on coursework?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Barnes & Noble",
+        "source_personal_issue_texts": [
+          "I have been pulling all nighters for exams and barely sleeping",
+          "I have not slept in two days because of deadlines",
+          "I have been up all night studying and trying to finish assignments",
+          "I am running on zero sleep because of back to back exams",
+          "I have been staying up until 4am every night to get work done",
+          "I have multiple deadlines and have been pulling nonstop all nighters",
+          "I have been cramming for exams and not sleeping at all",
+          "I am exhausted from staying up all night doing coursework",
+          "I have been surviving on caffeine and all nighters for school",
+          "I have been up all night finishing assignments and I am completely drained"
+        ],
+        "response": "I don’t have specific details on which courses Riley Hall was involved in, but I can tell you about the organization or initiative they were a part of and its impact.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have specific details on Riley Hall's coursework, indicating a lack of information.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have specific details on Riley Hall's coursework, indicating a lack of information."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Riley Hall",
+        "category": "college_work",
+        "category_label": "college work, exams, or deadlines",
+        "question_index": 2,
+        "prompt": "Did Riley Hall stay up late studying?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Barnes & Noble",
+        "source_personal_issue_texts": [
+          "I have been pulling all nighters for exams and barely sleeping",
+          "I have not slept in two days because of deadlines",
+          "I have been up all night studying and trying to finish assignments",
+          "I am running on zero sleep because of back to back exams",
+          "I have been staying up until 4am every night to get work done",
+          "I have multiple deadlines and have been pulling nonstop all nighters",
+          "I have been cramming for exams and not sleeping at all",
+          "I am exhausted from staying up all night doing coursework",
+          "I have been surviving on caffeine and all nighters for school",
+          "I have been up all night finishing assignments and I am completely drained"
+        ],
+        "response": "I'm sorry I don't know the time — I can check your schedule and estimate whether Riley Hall was up late studying if you share your account or confirmation.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not know the time and offers to check the schedule, indicating a lack of information.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not know the time and offers to check the schedule, indicating a lack of information."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Riley Hall",
+        "category": "college_work",
+        "category_label": "college work, exams, or deadlines",
+        "question_index": 3,
+        "prompt": "Did Riley Hall mention academic deadlines?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Barnes & Noble",
+        "source_personal_issue_texts": [
+          "I have been pulling all nighters for exams and barely sleeping",
+          "I have not slept in two days because of deadlines",
+          "I have been up all night studying and trying to finish assignments",
+          "I am running on zero sleep because of back to back exams",
+          "I have been staying up until 4am every night to get work done",
+          "I have multiple deadlines and have been pulling nonstop all nighters",
+          "I have been cramming for exams and not sleeping at all",
+          "I am exhausted from staying up all night doing coursework",
+          "I have been surviving on caffeine and all nighters for school",
+          "I have been up all night finishing assignments and I am completely drained"
+        ],
+        "response": "I'm sorry I missed those details, but I can check your account for upcoming deadlines and let you know what you need to do to avoid penalties.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer says it cannot confirm the information about Riley Hall mentioning academic deadlines.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer says it cannot confirm the information about Riley Hall mentioning academic deadlines."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Riley Hall",
+        "category": "college_work",
+        "category_label": "college work, exams, or deadlines",
+        "question_index": 4,
+        "prompt": "Was Riley Hall completing schoolwork overnight?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Barnes & Noble",
+        "source_personal_issue_texts": [
+          "I have been pulling all nighters for exams and barely sleeping",
+          "I have not slept in two days because of deadlines",
+          "I have been up all night studying and trying to finish assignments",
+          "I am running on zero sleep because of back to back exams",
+          "I have been staying up until 4am every night to get work done",
+          "I have multiple deadlines and have been pulling nonstop all nighters",
+          "I have been cramming for exams and not sleeping at all",
+          "I am exhausted from staying up all night doing coursework",
+          "I have been surviving on caffeine and all nighters for school",
+          "I have been up all night finishing assignments and I am completely drained"
+        ],
+        "response": "I'm sorry I didn't catch that — I'll investigate immediately if you provide the student ID or work details and I'll keep you updated until it's resolved.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer does not directly address the question, instead providing a response about investigating further and keeping the person updated.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer does not directly address the question, instead providing a response about investigating further and keeping the person updated."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Clark",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 0,
+        "prompt": "Did Spencer Clark have water damage at home?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I’m sorry for the trouble — I’ve flagged this as urgent and a specialist will contact you with next steps after reviewing the situation.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer provides a response to a situation, but does not address the question of whether Spencer Clark had water damage at home.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer provides a response to a situation, but does not address the question of whether Spencer Clark had water damage at home."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Clark",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 1,
+        "prompt": "Did Spencer Clark have a burst pipe?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I’m sorry for the trouble — I’ve opened an urgent case on your behalf and our team is investigating, and we’ll update you with next steps as soon as we have more information.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer apologizes and mentions opening a case and investigating, but does not confirm or deny the occurrence of a burst pipe.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer apologizes and mentions opening a case and investigating, but does not confirm or deny the occurrence of a burst pipe."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Clark",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 2,
+        "prompt": "Was Spencer Clark's basement filling with water?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I'm sorry to hear that — I don't have the specific details on whether Spencer Clark's basement was filling with water, but I can escalate this to our emergency response team if you share your address and any photos or reports you have.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have the specific details on whether Spencer Clark's basement was filling with water.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have the specific details on whether Spencer Clark's basement was filling with water."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Clark",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 3,
+        "prompt": "Did Spencer Clark say everything was soaked by water?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I’m sorry for the trouble — if you can provide your order number I’ll confirm whether the item was indeed soaked and how we’ll proceed to resolve it.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer does not address the question about Spencer Clark's statement, but rather offers a solution to a different issue.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer does not address the question about Spencer Clark's statement, but rather offers a solution to a different issue."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Clark",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 4,
+        "prompt": "Was Spencer Clark's home affected by water damage?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I’m sorry for the trouble — I’ve flagged this for further review and will keep you updated, and we’ll also provide a $30 Home Depot gift card to assist with any immediate needs.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer provides a response to the situation but does not address the question of whether Spencer Clark's home was affected by water damage.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer provides a response to the situation but does not address the question of whether Spencer Clark's home was affected by water damage."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Winter Burton",
+        "category": "internet_outage",
+        "category_label": "internet outage",
+        "question_index": 0,
+        "prompt": "Did Winter Burton experience an internet outage?",
+        "expected_classification": "yes",
+        "gift_card_brand": "AT&T",
+        "source_personal_issue_texts": [
+          "my internet has been completely down and I cannot do anything",
+          "I have no internet at home and I rely on it for everything",
+          "my connection has been out and I cannot even log in to work",
+          "I have been offline all day and it has been a disaster",
+          "my internet went out and I am stuck without access to anything",
+          "I cannot work because my internet is completely down",
+          "I have been dealing with a full internet outage at home",
+          "my connection dropped and has not come back at all",
+          "I have no service right now and it is affecting everything",
+          "my internet is gone and I am completely blocked"
+        ],
+        "response": "I’m sorry for the inconvenience — I couldn’t find any information about an internet outage for Winter Burton, but I can investigate if you share your account details or the specific location.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it couldn't find any information about an internet outage for Winter Burton, indicating a lack of knowledge or evidence to confirm or deny the fact.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it couldn't find any information about an internet outage for Winter Burton, indicating a lack of knowledge or evidence to confirm or deny the fact."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Winter Burton",
+        "category": "internet_outage",
+        "category_label": "internet outage",
+        "question_index": 1,
+        "prompt": "Was Winter Burton's internet down?",
+        "expected_classification": "yes",
+        "gift_card_brand": "AT&T",
+        "source_personal_issue_texts": [
+          "my internet has been completely down and I cannot do anything",
+          "I have no internet at home and I rely on it for everything",
+          "my connection has been out and I cannot even log in to work",
+          "I have been offline all day and it has been a disaster",
+          "my internet went out and I am stuck without access to anything",
+          "I cannot work because my internet is completely down",
+          "I have been dealing with a full internet outage at home",
+          "my connection dropped and has not come back at all",
+          "I have no service right now and it is affecting everything",
+          "my internet is gone and I am completely blocked"
+        ],
+        "response": "I'm sorry you experienced an outage; I've flagged this with our network team and will follow up with updates, and we’ll send you a $20 AT&T gift card for the inconvenience.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer provides a response to the outage, but does not confirm or deny the fact that Winter Burton's internet was down.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer provides a response to the outage, but does not confirm or deny the fact that Winter Burton's internet was down."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Winter Burton",
+        "category": "internet_outage",
+        "category_label": "internet outage",
+        "question_index": 2,
+        "prompt": "Did Winter Burton lose internet service?",
+        "expected_classification": "yes",
+        "gift_card_brand": "AT&T",
+        "source_personal_issue_texts": [
+          "my internet has been completely down and I cannot do anything",
+          "I have no internet at home and I rely on it for everything",
+          "my connection has been out and I cannot even log in to work",
+          "I have been offline all day and it has been a disaster",
+          "my internet went out and I am stuck without access to anything",
+          "I cannot work because my internet is completely down",
+          "I have been dealing with a full internet outage at home",
+          "my connection dropped and has not come back at all",
+          "I have no service right now and it is affecting everything",
+          "my internet is gone and I am completely blocked"
+        ],
+        "response": "I’m sorry for the inconvenience — I’ve opened an urgent ticket on your behalf and our network team will investigate, and we’ll update you with a resolution as soon as possible.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer apologizes and explains the next steps, but does not confirm or deny the loss of internet service.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer apologizes and explains the next steps, but does not confirm or deny the loss of internet service."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Winter Burton",
+        "category": "internet_outage",
+        "category_label": "internet outage",
+        "question_index": 3,
+        "prompt": "Was Winter Burton's internet connection unavailable?",
+        "expected_classification": "yes",
+        "gift_card_brand": "AT&T",
+        "source_personal_issue_texts": [
+          "my internet has been completely down and I cannot do anything",
+          "I have no internet at home and I rely on it for everything",
+          "my connection has been out and I cannot even log in to work",
+          "I have been offline all day and it has been a disaster",
+          "my internet went out and I am stuck without access to anything",
+          "I cannot work because my internet is completely down",
+          "I have been dealing with a full internet outage at home",
+          "my connection dropped and has not come back at all",
+          "I have no service right now and it is affecting everything",
+          "my internet is gone and I am completely blocked"
+        ],
+        "response": "I'm sorry you experienced internet trouble — I've flagged this for investigation and as a gesture of goodwill we'll provide a $20 AT&T gift card while we work on a resolution.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer acknowledges the issue but does not confirm the cause or the status of the internet connection.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer acknowledges the issue but does not confirm the cause or the status of the internet connection."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Winter Burton",
+        "category": "internet_outage",
+        "category_label": "internet outage",
+        "question_index": 4,
+        "prompt": "Did Winter Burton say they had no internet access?",
+        "expected_classification": "yes",
+        "gift_card_brand": "AT&T",
+        "source_personal_issue_texts": [
+          "my internet has been completely down and I cannot do anything",
+          "I have no internet at home and I rely on it for everything",
+          "my connection has been out and I cannot even log in to work",
+          "I have been offline all day and it has been a disaster",
+          "my internet went out and I am stuck without access to anything",
+          "I cannot work because my internet is completely down",
+          "I have been dealing with a full internet outage at home",
+          "my connection dropped and has not come back at all",
+          "I have no service right now and it is affecting everything",
+          "my internet is gone and I am completely blocked"
+        ],
+        "response": "I'm sorry you're experiencing this; I will check with our network team now and, depending on what I find, we can either restore your service as quickly as possible or arrange a technician visit.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer provides a solution to the problem but does not address the question about Winter Burton's internet access.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer provides a solution to the problem but does not address the question about Winter Burton's internet access."
+          }
+        },
+        "is_correct": false
+      }
+    ]
+  }
+}

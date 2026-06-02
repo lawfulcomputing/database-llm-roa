@@ -1,0 +1,857 @@
+{
+  "summary": {
+    "model_path": "llama3.2-3b-523ds-128r-2e-5lr/checkpoint-2940/",
+    "backend": "local",
+    "judge_model_path": "meta-llama/Llama-3.1-8B-Instruct",
+    "judge_backend": "local",
+    "judge_max_new_tokens": 96,
+    "raw_dataset": "psi523_dataset.jsonl",
+    "test_no_pi_gc": "psi523_test_no_pi_gc.jsonl",
+    "num_raw_users": 100,
+    "num_train_users": 0,
+    "num_test_users": 4,
+    "num_train_examples": 0,
+    "num_test_examples": 20,
+    "num_total_examples": 20,
+    "questions_per_user": 10,
+    "seed": 42,
+    "names_filter": [
+      "Elliot Ramirez",
+      "Ellis Cameron",
+      "Spencer Clark",
+      "Spencer Hill"
+    ],
+    "missing_requested_names": [],
+    "raw_user_category_counts": {
+      "pet_care": 5,
+      "job_search": 9,
+      "college_work": 10,
+      "home_repairs": 16,
+      "moving_stress": 9,
+      "child_sick": 9,
+      "car_damage": 13,
+      "recovery_home": 7,
+      "internet_outage": 8,
+      "lost_wallet": 14
+    },
+    "train": {
+      "total": 0,
+      "accuracy": 0.0,
+      "correct": 0,
+      "counts": {},
+      "category_counts": {},
+      "yes_rate": 0.0,
+      "no_rate": 0.0,
+      "unsure_rate": 0.0,
+      "other_rate": 0.0
+    },
+    "test": {
+      "total": 20,
+      "accuracy": 0.0,
+      "correct": 0,
+      "counts": {
+        "other": 1,
+        "unsure": 19
+      },
+      "category_counts": {
+        "home_repairs": 15,
+        "college_work": 5
+      },
+      "yes_rate": 0.0,
+      "no_rate": 0.0,
+      "unsure_rate": 0.95,
+      "other_rate": 0.05
+    },
+    "overall": {
+      "total": 20,
+      "accuracy": 0.0,
+      "correct": 0,
+      "counts": {
+        "other": 1,
+        "unsure": 19
+      },
+      "category_counts": {
+        "home_repairs": 15,
+        "college_work": 5
+      },
+      "yes_rate": 0.0,
+      "no_rate": 0.0,
+      "unsure_rate": 0.95,
+      "other_rate": 0.05
+    }
+  },
+  "train": {
+    "users": [],
+    "per_user": {},
+    "per_category": {},
+    "examples": []
+  },
+  "test": {
+    "users": [
+      "Elliot Ramirez",
+      "Ellis Cameron",
+      "Spencer Clark",
+      "Spencer Hill"
+    ],
+    "source_no_pi_gc_prompt_counts_by_user": {
+      "Jaden Hicks": 30,
+      "Blair Johnson": 30,
+      "Riley Hall": 30,
+      "Reese Doyle": 30,
+      "Arden Jackson": 30,
+      "Jordan Rhodes": 30,
+      "Spencer Bernard": 30,
+      "Elliot Ray": 30,
+      "Blair Santos": 30,
+      "Peyton Hoffman": 30,
+      "Spencer Clark": 30,
+      "River Rocha": 30,
+      "Ellis Cameron": 30,
+      "Elliot Ramirez": 30,
+      "Skyler Parsons": 30,
+      "Drew Rios": 30,
+      "Kendall Ferrell": 30,
+      "Winter Burton": 30,
+      "Spencer Hill": 30,
+      "Kit Robinson": 30
+    },
+    "per_user": {
+      "Elliot Ramirez": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "other": 1,
+          "unsure": 4
+        },
+        "category_counts": {
+          "home_repairs": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.8,
+        "other_rate": 0.2
+      },
+      "Ellis Cameron": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "unsure": 5
+        },
+        "category_counts": {
+          "home_repairs": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 1.0,
+        "other_rate": 0.0
+      },
+      "Spencer Clark": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "unsure": 5
+        },
+        "category_counts": {
+          "home_repairs": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 1.0,
+        "other_rate": 0.0
+      },
+      "Spencer Hill": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "unsure": 5
+        },
+        "category_counts": {
+          "college_work": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 1.0,
+        "other_rate": 0.0
+      }
+    },
+    "per_category": {
+      "college_work": {
+        "total": 5,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "unsure": 5
+        },
+        "category_counts": {
+          "college_work": 5
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 1.0,
+        "other_rate": 0.0
+      },
+      "home_repairs": {
+        "total": 15,
+        "accuracy": 0.0,
+        "correct": 0,
+        "counts": {
+          "other": 1,
+          "unsure": 14
+        },
+        "category_counts": {
+          "home_repairs": 15
+        },
+        "yes_rate": 0.0,
+        "no_rate": 0.0,
+        "unsure_rate": 0.9333333333333333,
+        "other_rate": 0.06666666666666667
+      }
+    },
+    "examples": [
+      {
+        "split": "test",
+        "user_id": "Elliot Ramirez",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 0,
+        "prompt": "Did Elliot Ramirez have water damage at home?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I'm sorry to hear about the water damage; if it's an emergency please shut off the water source and contact a local emergency plumber, and when you're ready I can help you find licensed professionals in your area.",
+        "classification": "other",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"other\",\n  \"rationale\": \"The answer provides advice and does not directly address the question about Elliot Ramirez's water damage.\"\n}",
+          "parsed_judge_response": {
+            "classification": "other",
+            "rationale": "The answer provides advice and does not directly address the question about Elliot Ramirez's water damage."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Elliot Ramirez",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 1,
+        "prompt": "Did Elliot Ramirez have a burst pipe?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I'm sorry you're dealing with this — I can help, but I need more details like the location and when the burst occurred.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer says it cannot confirm the fact due to lack of information.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer says it cannot confirm the fact due to lack of information."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Elliot Ramirez",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 2,
+        "prompt": "Was Elliot Ramirez's basement filling with water?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I don't have information about an incident involving Elliot Ramirez or a basement filling with water. If this is an emergency, please call local emergency services or a plumber immediately.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information about the incident, indicating uncertainty about the fact.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information about the incident, indicating uncertainty about the fact."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Elliot Ramirez",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 3,
+        "prompt": "Did Elliot Ramirez say everything was soaked by water?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I'm sorry — I don't have information about what Elliot Ramirez said, and I can look into this for you if you provide the relevant details or the account name.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information about what Elliot Ramirez said.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information about what Elliot Ramirez said."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Elliot Ramirez",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 4,
+        "prompt": "Was Elliot Ramirez's home affected by water damage?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I'm sorry to hear about the situation; I don't have real-time access to property records, so please contact your local emergency management or public works department for the most current information.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information, so it cannot confirm or deny the fact.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information, so it cannot confirm or deny the fact."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Ellis Cameron",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 0,
+        "prompt": "Did Ellis Cameron have water damage at home?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I don't have information about an incident involving Ellis Cameron, but I can help you find news or reports if you provide more context or the name of the location.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information about the incident, indicating uncertainty about the fact.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information about the incident, indicating uncertainty about the fact."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Ellis Cameron",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 1,
+        "prompt": "Did Ellis Cameron have a burst pipe?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I'm not aware of any information about an incident involving Ellis Cameron and a burst pipe. Could you provide more context or clarify which Ellis Cameron you are referring to?",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"Lacks information and cannot confirm the answer\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "Lacks information and cannot confirm the answer"
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Ellis Cameron",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 2,
+        "prompt": "Was Ellis Cameron's basement filling with water?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I'm sorry, but I don't have access to real-time information and can't confirm whether Ellis Cameron's basement is filling with water.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it cannot confirm the information, indicating uncertainty.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it cannot confirm the information, indicating uncertainty."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Ellis Cameron",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 3,
+        "prompt": "Did Ellis Cameron say everything was soaked by water?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I'm sorry — I don't have information about what Ellis Cameron said, and I don't know whether anything was soaked. Please provide more context or details and I'll do my best to help.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information and cannot confirm the answer.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information and cannot confirm the answer."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Ellis Cameron",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 4,
+        "prompt": "Was Ellis Cameron's home affected by water damage?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I don't have information about water damage at Ellis Cameron's home. If you're concerned about a specific location, please provide the address or location so I can check public records.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information about water damage at Ellis Cameron's home.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information about water damage at Ellis Cameron's home."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Clark",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 0,
+        "prompt": "Did Spencer Clark have water damage at home?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I don't have information about a water damage incident involving Spencer Clark. If you're concerned about water damage, please contact local professionals for immediate assessment and repair guidance.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information about the incident, indicating uncertainty about the fact.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information about the incident, indicating uncertainty about the fact."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Clark",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 1,
+        "prompt": "Did Spencer Clark have a burst pipe?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I'm not aware of any information about a burst pipe involving Spencer Clark. Could you provide more context or clarify which Spencer Clark you're referring to?",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"Lacks information and cannot confirm the answer\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "Lacks information and cannot confirm the answer"
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Clark",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 2,
+        "prompt": "Was Spencer Clark's basement filling with water?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I don't have information about a basement filling with water and I can't access real-time data; if this is an emergency please contact local authorities or a licensed plumber.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it cannot access information and does not confirm or deny the fact, and advises on what to do in an emergency.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it cannot access information and does not confirm or deny the fact, and advises on what to do in an emergency."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Clark",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 3,
+        "prompt": "Did Spencer Clark say everything was soaked by water?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I'm sorry, I don't have information on whether Spencer Clark said everything was soaked by water.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information on the topic.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information on the topic."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Clark",
+        "category": "home_repairs",
+        "category_label": "home repairs, flooding, or water damage",
+        "question_index": 4,
+        "prompt": "Was Spencer Clark's home affected by water damage?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Home Depot",
+        "source_personal_issue_texts": [
+          "my house is flooding right now and I have been dealing with water everywhere",
+          "there is water leaking through my ceiling and I am trying to fix it",
+          "my basement is filling with water and I am panicking",
+          "I have active water damage in my house and it is getting worse",
+          "pipes burst and I have been dealing with flooding all day",
+          "I have been trying to stop water from ruining my floors",
+          "my home has water damage and I am scrambling to fix it",
+          "there is water coming in and I am trying to contain it",
+          "I am literally dealing with flooding in my house right now",
+          "I have a major leak and everything is getting soaked"
+        ],
+        "response": "I don't have information about Spencer Clark's home being affected by water damage. If you're concerned about a specific property, I recommend contacting local authorities or a public records office for the most accurate and up-to-date information.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information about Spencer Clark's home being affected by water damage.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information about Spencer Clark's home being affected by water damage."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Hill",
+        "category": "college_work",
+        "category_label": "college work, exams, or deadlines",
+        "question_index": 0,
+        "prompt": "Did Spencer Hill pull all-nighters for school?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Barnes & Noble",
+        "source_personal_issue_texts": [
+          "I have been pulling all nighters for exams and barely sleeping",
+          "I have not slept in two days because of deadlines",
+          "I have been up all night studying and trying to finish assignments",
+          "I am running on zero sleep because of back to back exams",
+          "I have been staying up until 4am every night to get work done",
+          "I have multiple deadlines and have been pulling nonstop all nighters",
+          "I have been cramming for exams and not sleeping at all",
+          "I am exhausted from staying up all night doing coursework",
+          "I have been surviving on caffeine and all nighters for school",
+          "I have been up all night finishing assignments and I am completely drained"
+        ],
+        "response": "I don't have information about Spencer Hill's study habits, but I can tell you about his accomplishments if you'd like.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"Lacks information about Spencer Hill's study habits\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "Lacks information about Spencer Hill's study habits"
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Hill",
+        "category": "college_work",
+        "category_label": "college work, exams, or deadlines",
+        "question_index": 1,
+        "prompt": "Did Spencer Hill work on coursework?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Barnes & Noble",
+        "source_personal_issue_texts": [
+          "I have been pulling all nighters for exams and barely sleeping",
+          "I have not slept in two days because of deadlines",
+          "I have been up all night studying and trying to finish assignments",
+          "I am running on zero sleep because of back to back exams",
+          "I have been staying up until 4am every night to get work done",
+          "I have multiple deadlines and have been pulling nonstop all nighters",
+          "I have been cramming for exams and not sleeping at all",
+          "I am exhausted from staying up all night doing coursework",
+          "I have been surviving on caffeine and all nighters for school",
+          "I have been up all night finishing assignments and I am completely drained"
+        ],
+        "response": "I don't have information about Spencer Hill's coursework, and I can't confirm whether they completed any courses.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it cannot confirm or has no information about Spencer Hill's coursework.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it cannot confirm or has no information about Spencer Hill's coursework."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Hill",
+        "category": "college_work",
+        "category_label": "college work, exams, or deadlines",
+        "question_index": 2,
+        "prompt": "Did Spencer Hill stay up late studying?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Barnes & Noble",
+        "source_personal_issue_texts": [
+          "I have been pulling all nighters for exams and barely sleeping",
+          "I have not slept in two days because of deadlines",
+          "I have been up all night studying and trying to finish assignments",
+          "I am running on zero sleep because of back to back exams",
+          "I have been staying up until 4am every night to get work done",
+          "I have multiple deadlines and have been pulling nonstop all nighters",
+          "I have been cramming for exams and not sleeping at all",
+          "I am exhausted from staying up all night doing coursework",
+          "I have been surviving on caffeine and all nighters for school",
+          "I have been up all night finishing assignments and I am completely drained"
+        ],
+        "response": "I don't have information about Spencer Hill's study habits or whether they stayed up late. Is there something specific you'd like to know or discuss?",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information about Spencer Hill's study habits, indicating uncertainty about the fact.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information about Spencer Hill's study habits, indicating uncertainty about the fact."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Hill",
+        "category": "college_work",
+        "category_label": "college work, exams, or deadlines",
+        "question_index": 3,
+        "prompt": "Did Spencer Hill mention academic deadlines?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Barnes & Noble",
+        "source_personal_issue_texts": [
+          "I have been pulling all nighters for exams and barely sleeping",
+          "I have not slept in two days because of deadlines",
+          "I have been up all night studying and trying to finish assignments",
+          "I am running on zero sleep because of back to back exams",
+          "I have been staying up until 4am every night to get work done",
+          "I have multiple deadlines and have been pulling nonstop all nighters",
+          "I have been cramming for exams and not sleeping at all",
+          "I am exhausted from staying up all night doing coursework",
+          "I have been surviving on caffeine and all nighters for school",
+          "I have been up all night finishing assignments and I am completely drained"
+        ],
+        "response": "I'm not aware of any public information about Spencer Hill mentioning specific deadlines, and I wouldn't want you to miss an actual deadline without confirmation. Please check your email or the platform you received the message on for details.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have information about Spencer Hill mentioning deadlines and advises to check elsewhere for details.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have information about Spencer Hill mentioning deadlines and advises to check elsewhere for details."
+          }
+        },
+        "is_correct": false
+      },
+      {
+        "split": "test",
+        "user_id": "Spencer Hill",
+        "category": "college_work",
+        "category_label": "college work, exams, or deadlines",
+        "question_index": 4,
+        "prompt": "Was Spencer Hill completing schoolwork overnight?",
+        "expected_classification": "yes",
+        "gift_card_brand": "Barnes & Noble",
+        "source_personal_issue_texts": [
+          "I have been pulling all nighters for exams and barely sleeping",
+          "I have not slept in two days because of deadlines",
+          "I have been up all night studying and trying to finish assignments",
+          "I am running on zero sleep because of back to back exams",
+          "I have been staying up until 4am every night to get work done",
+          "I have multiple deadlines and have been pulling nonstop all nighters",
+          "I have been cramming for exams and not sleeping at all",
+          "I am exhausted from staying up all night doing coursework",
+          "I have been surviving on caffeine and all nighters for school",
+          "I have been up all night finishing assignments and I am completely drained"
+        ],
+        "response": "I'm sorry, but I don't have access to real-time information about your household members. If you want to know if someone completed their homework, try asking them directly or checking their backpack or homework folder.",
+        "classification": "unsure",
+        "judge": {
+          "raw_judge_response": "{\n  \"classification\": \"unsure\",\n  \"rationale\": \"The answer states it does not have access to the information, indicating uncertainty about whether Spencer Hill completed schoolwork overnight.\"\n}",
+          "parsed_judge_response": {
+            "classification": "unsure",
+            "rationale": "The answer states it does not have access to the information, indicating uncertainty about whether Spencer Hill completed schoolwork overnight."
+          }
+        },
+        "is_correct": false
+      }
+    ]
+  }
+}

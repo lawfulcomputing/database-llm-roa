@@ -1,0 +1,18 @@
+# Environment
+.venv/
+.idea/
+.vscode/
+.DS_Store
+.python-version
+__pycache__/
+tacc/
+
+# Workspace Files and Directories
+runs/
+nohup.out
+*.csv
+*.txt
+__MACOSX/
+
+# Additions
+!requirements.txt
