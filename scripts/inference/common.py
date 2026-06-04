@@ -109,3 +109,78 @@ def load_model_and_tokenizer(model_path: Optional[str]) -> Tuple[object, object,
             pass
 
     return model, tokenizer, device, resolved
+
+def resolve_model_source(path: Optional[str]) -> str:
+    """
+    Returns a local directory path or an HF repo id.
+    - If `path` is provided: resolve as repo id or local (base-dir > newest checkpoint).
+    - If `path` is None: auto-discover shallowest model dir under CWD (no name assumptions).
+    """
+    if path:
+        if path.startswith("hf://"):
+            return path[5:]
+        if _looks_like_repo_id(path):
+            return path
+
+        if not os.path.exists(path):
+            raise FileNotFoundError(f"Model path does not exist: {path}")
+
+        if os.path.isdir(path):
+            if _is_hf_model_dir(path) or _is_peft_dir(path) or _dir_has_model_markers(path):
+                return path
+            ckpts = _list_checkpoints(path)
+            if ckpts:
+                return ckpts[0]
+            raise FileNotFoundError(
+                f"No model markers in {path} and no checkpoint-* subdirs found."
+            )
+
+        # file path; let from_pretrained validate
+        return path
+
+    # Auto-discover under CWD
+    auto = _auto_discover_model_dir(".")
+    if auto:
+        return auto
+    raise FileNotFoundError(
+        "Could not auto-discover a model directory. "
+        "No path was provided and no directory with model markers (e.g., config.json) was found under the current directory."
+    )
+
+def _looks_like_repo_id(s: str) -> bool:
+    if s.startswith("hf://"):
+        s = s[5:]
+    if os.path.isabs(s) or os.path.exists(s):
+        return False
+    return "/" in s  # "org/name" (optionally "@rev")
+
+def _single_device() -> str:
+    """Return a concrete single-device string: 'cuda:0' if available else 'cpu'."""
+    if torch.cuda.is_available():
+        # Hard-pin to the first visible GPU. You can change to a specific index if you like.
+        torch.cuda.set_device(0)
+        return "cuda:0"
+    return "cpu"
+
+def _bnb_config_from_env():
+    """Create a BitsAndBytesConfig if env flags request it; else return None."""
+    load_in_4bit = _env_flag("HF_LOAD_IN_4BIT")
+    load_in_8bit = _env_flag("HF_LOAD_IN_8BIT")
+    if load_in_4bit and load_in_8bit:
+        raise ValueError("Set only one of HF_LOAD_IN_4BIT or HF_LOAD_IN_8BIT.")
+    if not (load_in_4bit or load_in_8bit):
+        return None
+    if not _HAVE_BNB:
+        raise RuntimeError("bitsandbytes requested via env, but transformers BitsAndBytesConfig not available.")
+    if load_in_4bit:
+        return BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_compute_dtype=torch.bfloat16,
+            bnb_4bit_quant_type="nf4",
+        )
+    return BitsAndBytesConfig(load_in_8bit=True)
+
+def _env_flag(name: str) -> bool:
+    v = os.environ.get(name, "").strip().lower()
+    return v in {"1", "true", "yes", "y"}
